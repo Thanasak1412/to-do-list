@@ -8,7 +8,7 @@ const dateTitle = date.getDate();
 
 const app = express();
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {
+mongoose.connect("mongodb+srv://admin-thanasak:test1234@cluster0.krbkg.mongodb.net/todolistDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
