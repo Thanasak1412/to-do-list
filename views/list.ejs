@@ -1,6 +1,6 @@
 <%- include("header") %>
 <div class="box" id="heading">
-  <h1><%= listTitle %></h1>
+  <h1 id="list-title"><%= listTitle %></h1>
 </div>
 <div class="box">
   <% newItems.forEach(({name, _id}) => { %>
@@ -16,7 +16,7 @@
     </div>
     <input type="hidden" name="list" value="<%= listTitle %>" />
   </form>
-    <% }) %>
+  <% }) %>
   <form class="item" action="/" method="POST">
     <input
       type="text"
